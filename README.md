@@ -101,3 +101,7 @@ curl --cert certs/client.key --key certs/server.key https://localhost:8080
 ```
 
 # Testing with python: client side authentication
+Review the included python file.  
+```
+python example_client.py
+```
