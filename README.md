@@ -105,3 +105,16 @@ Review the included python file.
 ```
 python example_client.py
 ```
+
+# Running server with python vs uvicorn cli commands
+Depending on your entrypoint you might need to execute uvicorn from python.  
+This shows how to execute ubicorn using only python, instead of uvicorn cli.  
+```
+python app/app.py \
+    --host 0.0.0.0 \
+    --port 8080 \
+    --key certs/server.key \
+    --server_cert certs/server.crt \
+    --client_ca certs/server.crt \
+    --cert_required 2
+```
